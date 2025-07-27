@@ -1,3 +1,4 @@
+const myLybrary = [];
 function Book(title, author, pages){
     this.title = title;
     this.author = author;
@@ -9,8 +10,13 @@ function Book(title, author, pages){
 
 }
 
-const book1 = new Book('Entendendo Algoritmos', 'Bhargava', 300);
-console.log(book1.title)
-console.log(book1.author)
-console.log(book1.pages)
-console.log(book1.info())
+function addBookTolibrary(bookObject){
+    myLybrary.push(bookObject);
+}
+
+function goThroughTheLibrary(){
+    for (let i = 0; i <= myLybrary.length;i++){
+        return myLybrary[i].info();
+    }
+
+}
