@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script defer src="book.js"></script>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header>
         <h1>Add a new book</h1>
-
+        <nav>
+            <ul style="list-style-type: none;">
+               <a href="index.html">Back to home</a>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <form action="#" method="post">
+        <form id="bookForm" action="#" method="post">
             <div>
-                <label for="title">The name of book:</label>
+                <label for="titlebook">The name of book:</label>
                 <input type="text" name="title" id="titlebook" placeholder="The name of book">
             </div>
 
@@ -26,6 +33,11 @@
             <div>
                 <label for="pages">The number of pages</label>
                 <input type="number" name="pages" id="pages" placeholder="The number of pages">
+            </div>
+
+            <div>
+                <label for="readcheck">Have you read the whole book</label>
+                <input type="checkbox" name="read" id="readcheck">
             </div>
 
             <div>
